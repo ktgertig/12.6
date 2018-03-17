@@ -20,6 +20,9 @@ $(function() {
   		resp.forEach(function(item){
   			$('<img>').attr('src', item.flag).appendTo(countriesList);
    			$('<li>').text(item.name).appendTo(countriesList);
+   			$('<li>').text('Capital: ' + item.capital).appendTo(countriesList);
+   			$('<li>').text('Population: ' + item.population).appendTo(countriesList);
+   			$('<li>').text('Region: ' + item.region).appendTo(countriesList);
 		});
 	}
 
